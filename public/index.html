@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <!-- <meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0' > -->
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Raise - ROX</title>
+    <style>
+      @font-face {
+        font-display: swap;
+        font-family: 'Pokemon Hollow';
+        src: url('/assets/fonts/pokemon-hollow.ttf')
+      }
+
+      @font-face {
+        font-display: swap;
+        font-family: 'Poppins-Regular';
+        src: url('/assets/fonts/Poppins-Regular.ttf')
+      }
+
+      @font-face {
+        font-display: swap;
+        font-family: 'Poppins-SemiBold';
+        src: url('/assets/fonts/Poppins-SemiBold.ttf')
+      }
+      /* @font-face {
+  font-family: 'Poppins-Regular';
+  src: local('Poppins-Regular'), url(./assets/fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    font-weight: 500;
+    src: local('Poppins-SemiBold'), url(./assets/fonts/Poppins-SemiBold.ttf) format('truetype');
+} */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        cursor: default;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+          monospace;
+      }
+
+      #player {
+        position: absolute;
+      }
+
+      @media only screen and (min-width: 375px) { 
+        body {
+          /* background-image: url('/assets/images/pokemon-background.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover; */
+          background-color: #E5E5E5;
+          height: 100vh;
+          overflow: hidden;
+        }
+
+        a {
+          cursor: pointer;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- <div id="player"></div> -->
+
+    <!-- <script>
+      var tag = document.createElement('script')
+      tag.id = 'script-player'
+      tag.src = "https://www.youtube.com/iframe_api"
+      var firstScriptTag = document.getElementsByTagName('script')[0]
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
+
+      var player
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '0',
+          width: '0',
+          videoId: 'OMUFzzuBxs'
+        })
+      }
+    </script> -->
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script> -->
+
+    <!-- <script>
+      var firebaseConfig = {
+        databaseURL: "https://mulai-aja-dulu-default-rtdb.firebaseio.com"
+      };
+      firebase.initializeApp(firebaseConfig)
+      const database = firebase.database()
+    </script> -->
+
+  </body>
+</html>
