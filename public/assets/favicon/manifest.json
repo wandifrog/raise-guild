@@ -1,5 +1,6 @@
 {
- "name": "App",
+ "name": "Raise Guild",
+ "short_name": "Raise",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",

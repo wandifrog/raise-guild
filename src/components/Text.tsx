@@ -49,7 +49,7 @@ const Text = ({
   left,
   bold = false,
   center = false,
-  color = '#30294C',
+  color = '#000000',
   font,
   italic = false,
   onClick,

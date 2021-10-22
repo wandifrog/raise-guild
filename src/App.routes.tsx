@@ -6,7 +6,10 @@ import {
   Route
 } from 'react-router-dom'
 import Text from './components/Text'
+import Event from './pages/Event.page'
+import EventDetail from './pages/EventDetail.page'
 import Home from './pages/Home.page'
+import Member from './pages/Member.page'
 
 
 const AppRoutes = (): JSX.Element => {
@@ -22,13 +25,19 @@ const AppRoutes = (): JSX.Element => {
         {
           splashScreen ? (
             <SplashScreen>
-              <RaiseWallpaper src="./assets/images/raise-bg.png" />
+              <RaiseWallpaper src="/assets/images/raise-bg.png" />
               <Text top="55px" size="17px" bold center>Welcome to Raise guild community</Text>
             </SplashScreen>
           ) : (
             <Switch>
               <Route path="/member" exact>
-                <Home />
+                <Member />
+              </Route>
+              <Route path="/event" exact>
+                <Event />
+              </Route>
+              <Route path="/event/:id" exact>
+                <EventDetail />
               </Route>
               <Route path="/">
                 <Home />
@@ -45,9 +54,9 @@ const Container = styled.div`
   margin: 0 auto;
   position: relative;
   background-color: white;
-  width: 375px;
+  width: 400px;
   height: 100vh;
-  @media (max-width: 375px) {
+  @media (max-width: 400px) {
     width: 100%;
   }
 `

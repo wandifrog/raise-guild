@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-    <!-- <meta name='viewport' 
-     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
-     user-scalable=0' > -->
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+  <!-- <meta name='viewport' 
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+      user-scalable=0' > -->
+
+  <title>Raise - ROX</title>
+  <meta name="description" content="Welcome to Raise guild community" />
+  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+  <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
 
-    
-    <!--
+  <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="%PUBLIC_URL%/assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -29,89 +46,74 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Raise - ROX</title>
-    <style>
-      @font-face {
-        font-display: swap;
-        font-family: 'Pokemon Hollow';
-        src: url('/assets/fonts/pokemon-hollow.ttf')
-      }
 
-      @font-face {
-        font-display: swap;
-        font-family: 'Poppins-Regular';
-        src: url('/assets/fonts/Poppins-Regular.ttf')
-      }
+  <style>
+    @font-face {
+      font-display: swap;
+      font-family: 'Poppins-Regular';
+      src: url('/assets/fonts/Poppins-Regular.ttf')
+    }
 
-      @font-face {
-        font-display: swap;
-        font-family: 'Poppins-SemiBold';
-        src: url('/assets/fonts/Poppins-SemiBold.ttf')
-      }
-      /* @font-face {
-  font-family: 'Poppins-Regular';
-  src: local('Poppins-Regular'), url(./assets/fonts/Poppins-Regular.ttf) format('truetype');
-}
+    @font-face {
+      font-display: swap;
+      font-family: 'Poppins-SemiBold';
+      src: url('/assets/fonts/Poppins-SemiBold.ttf')
+    }
 
-@font-face {
-    font-family: 'Poppins-SemiBold';
-    font-weight: 500;
-    src: local('Poppins-SemiBold'), url(./assets/fonts/Poppins-SemiBold.ttf) format('truetype');
-} */
+    * {
+      box-sizing: border-box;
+    }
 
-      * {
-        box-sizing: border-box;
-      }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
 
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      cursor: default;
+    }
+
+    code {
+      font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+    }
+
+    #player {
+      position: absolute;
+    }
+
+    @media only screen and (min-width: 375px) {
       body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-          sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-        cursor: default;
-      }
-
-      code {
-        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-          monospace;
-      }
-
-      #player {
-        position: absolute;
-      }
-
-      @media only screen and (min-width: 375px) { 
-        body {
-          /* background-image: url('/assets/images/pokemon-background.jpg');
+        /* background-image: url('/assets/images/pokemon-background.jpg');
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover; */
-          background-color: #E5E5E5;
-          height: 100vh;
-          overflow: hidden;
-        }
-
-        a {
-          cursor: pointer;
-        }
+        background-color: #E5E5E5;
+        height: 100vh;
+        overflow: hidden;
       }
-    </style>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
 
-    <!-- <div id="player"></div> -->
+      a {
+        cursor: pointer;
+      }
+    }
+  </style>
+</head>
 
-    <!-- <script>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <!-- <div id="player"></div> -->
+
+  <!-- <script>
       var tag = document.createElement('script')
       tag.id = 'script-player'
       tag.src = "https://www.youtube.com/iframe_api"
@@ -128,10 +130,10 @@
       }
     </script> -->
 
-    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script> -->
 
-    <!-- <script>
+  <!-- <script>
       var firebaseConfig = {
         databaseURL: "https://mulai-aja-dulu-default-rtdb.firebaseio.com"
       };
@@ -139,5 +141,6 @@
       const database = firebase.database()
     </script> -->
 
-  </body>
+</body>
+
 </html>
