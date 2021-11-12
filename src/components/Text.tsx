@@ -32,6 +32,8 @@ type TextProps = ComponentMetrics & React.HTMLAttributes<HTMLDivElement> & {
    * Span element
    */
   span?: boolean;
+  // style?: CSS
+  alignRight?: boolean;
 }
 
 /**
@@ -47,14 +49,16 @@ const Text = ({
   right,
   bottom,
   left,
+  alignRight = false,
   bold = false,
   center = false,
-  color = '#000000',
+  color = '#333',
   font,
   italic = false,
   onClick,
   size = '15px',
   span = false,
+  // customStyle = {},
   ...props
 }: TextProps): JSX.Element => {
 
@@ -68,8 +72,9 @@ const Text = ({
     marginLeft: left,
     marginRight: right,
     marginTop: top,
-    textAlign: center ? 'center' : undefined,
+    textAlign: center ? 'center' : alignRight ? 'right' : undefined,
     userSelect: onClick ? 'none' : 'initial',
+    ...props.style
   }
 
   return React.createElement(

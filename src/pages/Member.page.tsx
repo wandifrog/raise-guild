@@ -19,13 +19,17 @@ const Member = (): JSX.Element => {
       <Text>Blimbing - 0895358823129</Text>
       <Text>Bob Duke - 089615453231</Text>
       <Text>Bonaa - 087887856910</Text>
+      <Text>Demelza - 081358752202</Text>
       <Text>DRAKE - 081221182199</Text>
-      <Text>FryingPan - 08812341606</Text>
+      <Text>FryingPan - 08812341606 (Roni)</Text>
       <Text>GoDzz-- - 081356091014</Text>
-      <Text>Kamizu - 08127227480</Text>
+      <Text>Joria - 081297922606</Text>
+      <Text>Kamizu - 08127227480 (Venny)</Text>
       <Text>Kitty Pryde - 082156753831</Text>
+      <Text>Kuanyi - 081247599699</Text>
       <Text>Lucipp - 08571712782</Text>
-      <Text>Luigi || AAAA - 08953131544</Text>
+      <Text>Luigi || ArArA - 08953131544</Text>
+      <Text>nyamukkk - 085240806801</Text>
       <Text>Nutella - 085156240330</Text>
       <Text>Plat L - 085731587200</Text>
       <Text>Praetorian - 081380085700</Text>
@@ -33,9 +37,11 @@ const Member = (): JSX.Element => {
       <Text>Shiroilnuu - 081578975328</Text>
       <Text>slegant - 08978380421</Text>
       <Text>soun - 08113051136</Text>
+      <Text>Soprano - 0895359460404</Text>
       <Text>Dealova - 085157069961</Text>
       <Text>VINATAN - 082144133519</Text>
-      <Text>Zevanya || Rozes - 081347263975</Text>
+      <Text>Vinsmoke Sanji - 081284897223</Text>
+      <Text>Zevanya || Rozes - 081347263975 (Herdy)</Text>
     </Screen>
   )
 }

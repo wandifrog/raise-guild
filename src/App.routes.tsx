@@ -10,6 +10,7 @@ import Event from './pages/Event.page'
 import EventDetail from './pages/EventDetail.page'
 import Home from './pages/Home.page'
 import Member from './pages/Member.page'
+import SquadKVM from './pages/SquadKVM.page'
 
 
 const AppRoutes = (): JSX.Element => {
@@ -32,6 +33,9 @@ const AppRoutes = (): JSX.Element => {
             <Switch>
               <Route path="/member" exact>
                 <Member />
+              </Route>
+              <Route path="/squad-kvm" exact>
+                <SquadKVM />
               </Route>
               <Route path="/event" exact>
                 <Event />
