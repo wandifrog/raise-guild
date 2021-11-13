@@ -5,7 +5,19 @@ const appContextPersistJson: AppState | null = appContextPersist && JSON.parse(a
 const initialState = appContextPersistJson || {
   darkMode: true,
   language: 'en',
-  myPokemonList: [],
+  member: [
+    {
+      name: '',
+      account: [
+        {
+          ign: 'Blimbing',
+          job: 'WS',
+          level: '63',
+          totalContribution: '485'
+        },
+      ]
+    }
+  ],
 }
 
 const AppStateContext = React.createContext<AppState | undefined>(undefined)
@@ -18,9 +30,6 @@ function appReducer(prevState: AppState, action: AppAction): AppState {
     }
     case 'CHANGE_LANGUAGE': {
       return { ...prevState, language: prevState.language === 'id' ? 'en' : 'id' }
-    }
-    case 'UPDATE_MY_POKEMON_LIST': {
-      return { ...prevState, myPokemonList: action.data }
     }
     default: {
       throw new Error(`Unhandled action type: ${action.type}`)

@@ -1,10 +1,7 @@
-import React, { Children } from 'react'
+import React from 'react'
 import styled from '@emotion/styled'
 import Text from '../components/Text'
-import useApp from '../hooks/App.hook'
 import HStack from '../components/HStack'
-import BackHeader from '../components/BackHeader'
-import { Link } from 'react-router-dom'
 import VStack from '../components/VStack'
 import LinkButton from '../components/ButtonLink'
 import RaiseFancyHeader from '../components/RaiseFancyHeader'
@@ -13,13 +10,14 @@ import { useHistory } from "react-router"
 const Home = (): JSX.Element => {
   const history = useHistory()
 
-  const handleAsd = () => {
+  const _handleWhatsapp = () => {
     const text = `halo kk Mooz, mau join guildnya dong. IGN ku xxxxx`
     window.open(`https://wa.me/628161325941?text=${text}`)
   }
 
   React.useEffect(() => {
     console.log(history)
+    window.history.replaceState(null, '', "/");
   }, [])
   
   return (
@@ -35,7 +33,7 @@ const Home = (): JSX.Element => {
             size="15px"
             color="#2ec6dc"
             bold
-            onClick={() => handleAsd()}
+            onClick={() => _handleWhatsapp()}
           >
             Contact
           </Text>

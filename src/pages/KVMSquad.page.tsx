@@ -1,11 +1,8 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import Text from '../components/Text'
-import useApp from '../hooks/App.hook'
 import HStack from '../components/HStack'
 import BackHeader from '../components/BackHeader'
-import { useHistory } from 'react-router'
-import VStack from '../components/VStack'
 
 const KVMSquad = (): JSX.Element => {
 
@@ -43,6 +40,21 @@ const KVMSquad = (): JSX.Element => {
           <Member name="GoDzz--" job="Sniper" />
           <Member name="Mooza" job="Sniper" />
         </Squad>
+        <Squad name="SQUAD #3">
+          <Member name="ArArA" job="Sniper" />
+          <Member name="slegant" job="LK" />
+          <Member name="Kitty Pryde" job="Sniper" />
+          <Member name="B O S" job="LK" />
+          <Member name="Lucipp" job="Sniper" />
+          <Member name="Adem" job="HW" />
+          <Member name="Nung28" job="HW" />
+          <Member name="Mavick" job="Sniper" />
+          <Member name="Kuanyi" job="Sniper" />
+          <Member name="Praetorian" job="LK" />
+          <Member name="'DRAKE'" job="AC" />
+          <Member name="GoDzz--" job="Sniper" />
+          <Member name="Mooza" job="Sniper" />
+        </Squad>
         <Squad name="KVM 3x">
           <Member name="BookieLee" job="Sniper" />
           <Member name="sha-sha" job="Sniper" />
@@ -56,7 +68,7 @@ const KVMSquad = (): JSX.Element => {
           <Member name="archni" job="Sniper" />
           <Member name="Mooza" job="Sniper" />
         </Squad>
-        <Text top="300px" size="10px" bold>Develop with <span style={{ color: 'red' }}>♥</span> by Wandi</Text>
+        <Text top="150px" size="10px" bold>Develop with <span style={{ color: 'red' }}>♥</span> by Wandi</Text>
       </Screen>
     </React.Fragment>
   )
