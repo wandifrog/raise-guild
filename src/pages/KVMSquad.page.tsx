@@ -13,47 +13,48 @@ const KVMSquad = (): JSX.Element => {
     <React.Fragment>
       <BackHeader title="KVM Squad" />
       <Screen>
-          <Squad name="SQUAD #1">
-            <Member name="Basith" job="LK" />
-            <Member name="Blimbing" job="WS" />
-            <Member name="Nutella" job="HW" />
-            <Member name="Rozes" job="Sniper" />
-            <Member name="nyamukk" job="HP" />
-            <Member name="GoDzz--" job="Sniper" />
-            <Member name="B O S" job="LK" />
-            <Member name="slegant" job="LK" />
-            <Member name="Adem" job="HW" />
-            <Member name="'DRAKE'" job="AC" />
-            <Member name="Mooza" job="Sniper" />
-          </Squad>
-          <Squad name="SQUAD #2">
-            <Member name="ArArA" job="Sniper" />
-            <Member name="slegant" job="LK" />
-            <Member name="Kitty Pryde" job="Sniper" />
-            <Member name="B O S" job="LK" />
-            <Member name="Lucipp" job="Sniper" />
-            <Member name="Adem" job="HW" />
-            <Member name="Nung28" job="HW" />
-            <Member name="Mavick" job="Sniper" />
-            <Member name="Kuanyi" job="Sniper" />
-            <Member name="'DRAKE'" job="AC" />
-            <Member name="Praetorian" job="LK" />
-            <Member name="Mooza" job="Sniper" />
-          </Squad>
-          <Squad name="KVM 3x">
-            <Member name="BookieLee" job="Sniper" />
-            <Member name="sha-sha" job="sniper" />
-            <Member name="Adem" job="HW" />
-            <Member name="Adem" job="HW" />
-            <Member name="Nung28" job="HW" />
-            <Member name="Praetorian" job="LK" />
-            <Member name="Mavick" job="Sniper" />
-            <Member name="Kuanyi" job="Sniper" />
-            <Member name="'DRAKE'" job="AC" />
-            <Member name="Plat L" job="HP" />
-            <Member name="archni" job="Sniper" />
-            <Member name="Mooza" job="Sniper" />
-          </Squad>
+        <Squad name="SQUAD #1">
+          <Member name="Basith" job="LK" />
+          <Member name="Blimbing" job="WS" />
+          <Member name="Nutella" job="HW" />
+          <Member name="Rozes" job="Sniper" />
+          <Member name="nyamukk" job="HP" />
+          <Member name="GoDzz--" job="Sniper" />
+          <Member name="B O S" job="LK" />
+          <Member name="slegant" job="LK" />
+          <Member name="Adem" job="HW" />
+          <Member name="'DRAKE'" job="AC" />
+          <Member name="Mooza" job="Sniper" />
+        </Squad>
+        <Squad name="SQUAD #2">
+          <Member name="ArArA" job="Sniper" />
+          <Member name="slegant" job="LK" />
+          <Member name="Kitty Pryde" job="Sniper" />
+          <Member name="B O S" job="LK" />
+          <Member name="Lucipp" job="Sniper" />
+          <Member name="Adem" job="HW" />
+          <Member name="Nung28" job="HW" />
+          <Member name="Mavick" job="Sniper" />
+          <Member name="Kuanyi" job="Sniper" />
+          <Member name="'DRAKE'" job="AC" />
+          <Member name="Praetorian" job="LK" />
+          <Member name="Mooza" job="Sniper" />
+        </Squad>
+        <Squad name="KVM 3x">
+          <Member name="BookieLee" job="Sniper" />
+          <Member name="sha-sha" job="sniper" />
+          <Member name="Adem" job="HW" />
+          <Member name="Adem" job="HW" />
+          <Member name="Nung28" job="HW" />
+          <Member name="Praetorian" job="LK" />
+          <Member name="Mavick" job="Sniper" />
+          <Member name="Kuanyi" job="Sniper" />
+          <Member name="'DRAKE'" job="AC" />
+          <Member name="Plat L" job="HP" />
+          <Member name="archni" job="Sniper" />
+          <Member name="Mooza" job="Sniper" />
+        </Squad>
+        <Text top="300px" size="10px" bold>Develop with <span style={{ color: 'red' }}>♥</span> by Wandi</Text>
       </Screen>
     </React.Fragment>
   )
@@ -96,15 +97,15 @@ const Member = ({
   let jobName
   switch (job) {
     case 'Sniper':
-      color = 'green'
+      color = '#388E3C'
       jobName = 'Sniper'
       break;
     case 'HW':
-      color = 'blue'
+      color = '#1565C0'
       jobName = 'High Wizzard'
       break;
     case 'WS':
-      color = 'teal'
+      color = '#00838F'
       jobName = 'White Smith'
       break;
     case 'LK':
@@ -112,7 +113,7 @@ const Member = ({
       jobName = 'Lord Knight'
       break;
     case 'HP':
-      color = 'orange'
+      color = '#F57F17'
       jobName = 'High Priest'
       break;
     case 'AC':
@@ -128,8 +129,8 @@ const Member = ({
   return (
     <HStack>
       <Text>{name}</Text>
-      <div style={{ padding: '4px', backgroundColor: '#d4e6df', borderRadius: '2px' }}>
-        <Text size="10px" left="6px" color={color} bold>{jobName}</Text>
+      <div style={{ padding: '1px', backgroundColor: '#d4e6df', borderRadius: '6px', marginLeft: '5px', height: '17px' }}>
+        <Text size="10px" color={color} bold>{jobName}</Text>
       </div>
     </HStack>
   )
@@ -137,9 +138,9 @@ const Member = ({
 
 const Screen = styled.div`
   position: relative;
-  padding: 0 4px;
+  padding: 12px 4px 4px;
   overflow: scroll;
-  height: auto;
+  height: calc(100vh - 60px);
 `
 
 export default KVMSquad

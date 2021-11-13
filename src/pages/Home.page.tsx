@@ -10,7 +10,6 @@ import LinkButton from '../components/ButtonLink'
 import RaiseFancyHeader from '../components/RaiseFancyHeader'
 
 const Home = (): JSX.Element => {
-  const [state, dispatch] = useApp()
   
   const handleAsd = () => {
     const text = `halo kk Mooz, mau join guildnya dong. IGN ku xxxxx`
@@ -37,15 +36,15 @@ const Home = (): JSX.Element => {
           <Text left="5px">our Hokage</Text>
         </HStack>
 
-        <Text top="30px"> </Text>
+        <Text top="50px"> </Text>
 
         <LinkButton to="/event">
           Event
         </LinkButton>
-        <LinkButton top="10px" to="/kvm-squad">
+        <LinkButton top="18px" to="/kvm-squad">
           KVM Squad
         </LinkButton>
-        <LinkButton top="10px" to="/raise-grand-fleet">
+        <LinkButton top="18px" to="/raise-grand-fleet">
           Raise Grand Fleet
         </LinkButton>
       </VStack>
