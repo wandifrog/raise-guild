@@ -14,7 +14,11 @@ const BackHeader = ({
 }: BackHeaderTypes) => {
   const history = useHistory()
   
+  console.log(history)
   const handleBack = () => {
+    if (history.length === 1 || history.length === 2) {
+      return history.push('/')
+    }
     if (onClick === undefined) {
       return history.goBack()
     } else {

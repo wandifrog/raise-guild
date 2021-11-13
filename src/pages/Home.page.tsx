@@ -8,13 +8,19 @@ import { Link } from 'react-router-dom'
 import VStack from '../components/VStack'
 import LinkButton from '../components/ButtonLink'
 import RaiseFancyHeader from '../components/RaiseFancyHeader'
+import { useHistory } from "react-router"
 
 const Home = (): JSX.Element => {
-  
+  const history = useHistory()
+
   const handleAsd = () => {
     const text = `halo kk Mooz, mau join guildnya dong. IGN ku xxxxx`
     window.open(`https://wa.me/628161325941?text=${text}`)
-  } 
+  }
+
+  React.useEffect(() => {
+    console.log(history)
+  }, [])
   
   return (
     <Screen>
