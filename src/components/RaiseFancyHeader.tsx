@@ -21,7 +21,7 @@ const Asd = styled.div`
       z-index: 1;
       font-family: 'Poppins-SemiBold';
       font-size: 5rem;
-      animation: glow 2s ease-in-out infinite alternate;
+      animation: glow 1.7s ease-in-out infinite alternate;
       text-align: center;
       color: #313138;
 

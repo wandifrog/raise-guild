@@ -24,6 +24,8 @@ const KVMSquad = (): JSX.Element => {
           <Member name="slegant" job="LK" />
           <Member name="Adem" job="HW" />
           <Member name="'DRAKE'" job="AC" />
+          <Member name="Kitty Pryde" job="Sniper" />
+          <Member name="Lucipp" job="Sniper" />
           <Member name="Mooza" job="Sniper" />
         </Squad>
         <Squad name="SQUAD #2">
@@ -36,14 +38,14 @@ const KVMSquad = (): JSX.Element => {
           <Member name="Nung28" job="HW" />
           <Member name="Mavick" job="Sniper" />
           <Member name="Kuanyi" job="Sniper" />
-          <Member name="'DRAKE'" job="AC" />
           <Member name="Praetorian" job="LK" />
+          <Member name="'DRAKE'" job="AC" />
+          <Member name="GoDzz--" job="Sniper" />
           <Member name="Mooza" job="Sniper" />
         </Squad>
         <Squad name="KVM 3x">
           <Member name="BookieLee" job="Sniper" />
-          <Member name="sha-sha" job="sniper" />
-          <Member name="Adem" job="HW" />
+          <Member name="sha-sha" job="Sniper" />
           <Member name="Adem" job="HW" />
           <Member name="Nung28" job="HW" />
           <Member name="Praetorian" job="LK" />
