@@ -13,7 +13,8 @@ const Home = (): JSX.Element => {
   const [state, dispatch] = useApp()
   
   const handleAsd = () => {
-    alert(1)
+    const text = `halo kk Mooz, mau join guildnya dong. IGN ku xxxxx`
+    window.open(`https://wa.me/628161325941?text=${text}`)
   } 
   
   return (
@@ -41,10 +42,10 @@ const Home = (): JSX.Element => {
         <LinkButton to="/event">
           Event
         </LinkButton>
-        <LinkButton to="/kvm-squad">
+        <LinkButton top="10px" to="/kvm-squad">
           KVM Squad
         </LinkButton>
-        <LinkButton to="/raise-grand-fleet">
+        <LinkButton top="10px" to="/raise-grand-fleet">
           Raise Grand Fleet
         </LinkButton>
       </VStack>

@@ -23,7 +23,7 @@ const BackHeader = ({
   }
 
   return (
-    <HStack bottom="12px" height="60px" align="center" padding="0 28px" justify="space-between">
+    <HStack bottom="12px" height="60px" align="center" padding="0 22px" justify="space-between">
       <Icon src="/assets/images/icon-arrow-left.png" onClick={() => handleBack()} />
       <Text size="17px" bold>{title}</Text>
       <EmptyIcon />
@@ -34,7 +34,6 @@ const BackHeader = ({
 const Icon = styled.img`
   width: 24px;
   height: 24px;
-  cursor: pointer;
 `
 const EmptyIcon = styled.div`
   width: 24px;

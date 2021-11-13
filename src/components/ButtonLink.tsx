@@ -1,9 +1,10 @@
 import React from 'react'
 import { useHistory } from 'react-router'
+import { ComponentMetrics } from '../types/Component';
 import Text from './Text'
 
 
-type LinkButtonTypes = {
+type LinkButtonTypes = ComponentMetrics & {
   children: React.ReactChild;
   to: string;
   params?: any
@@ -11,7 +12,8 @@ type LinkButtonTypes = {
 
 const LinkButton = ({
   children,
-  to = ''
+  top,
+  to = '',
 }: LinkButtonTypes): JSX.Element => {
   const history = useHistory()
 
@@ -20,6 +22,7 @@ const LinkButton = ({
       size="14px"
       color="#2ec6dc"
       bold
+      top={top}
       onClick={() => history.push(to)}
     >
       {children}
