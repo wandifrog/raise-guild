@@ -8,7 +8,7 @@
       content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
       user-scalable=0' > -->
 
-  <title>Raise - ROX</title>
+  <title>Raise ROX</title>
   <meta name="description" content="Welcome to Raise guild community" />
   <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
   <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
@@ -35,6 +35,8 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
 
 
   <!--
@@ -102,6 +104,30 @@
 
       a {
         cursor: pointer;
+      }
+    }
+
+    h1 {
+      margin: 0;
+      padding-bottom: 6rem;
+      grid-column: 1;
+      grid-row: 1;
+      z-index: 1;
+      font-family: 'Teko', sans-serif;
+      font-size: 5rem;
+      text-transform: uppercase;
+      animation: glow 2s ease-in-out infinite alternate;
+      text-align: center;
+      color: #4dbbc7;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 20px #2d9da9;
+      }
+
+      to {
+        text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
       }
     }
   </style>

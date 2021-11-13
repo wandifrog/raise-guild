@@ -6,11 +6,13 @@ import {
   Route
 } from 'react-router-dom'
 import Text from './components/Text'
+import NotFoundPage from './pages/404.page'
 import Event from './pages/Event.page'
 import EventDetail from './pages/EventDetail.page'
 import Home from './pages/Home.page'
 import Member from './pages/Member.page'
-import SquadKVM from './pages/SquadKVM.page'
+import KVMSquad from './pages/KVMSquad.page'
+import RaiseGrandFleet from './pages/RaiseGrandFleet.page'
 
 
 const AppRoutes = (): JSX.Element => {
@@ -34,8 +36,11 @@ const AppRoutes = (): JSX.Element => {
               <Route path="/member" exact>
                 <Member />
               </Route>
-              <Route path="/squad-kvm" exact>
-                <SquadKVM />
+              <Route path="/kvm-squad" exact>
+                <KVMSquad />
+              </Route>
+              <Route path="/raise-grand-fleet" exact>
+                <RaiseGrandFleet />
               </Route>
               <Route path="/event" exact>
                 <Event />
@@ -43,9 +48,10 @@ const AppRoutes = (): JSX.Element => {
               <Route path="/event/:id" exact>
                 <EventDetail />
               </Route>
-              <Route path="/">
+              <Route path="/" exact>
                 <Home />
               </Route>
+              <Route path='*' exact component={NotFoundPage} />
             </Switch>
           )
         }

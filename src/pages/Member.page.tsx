@@ -20,7 +20,7 @@ const Member = (): JSX.Element => {
       <Text>Bob Duke - 089615453231</Text>
       <Text>Bonaa - 087887856910</Text>
       <Text>Demelza - 081358752202</Text>
-      <Text>DRAKE - 081221182199</Text>
+      <Text>DRAKE - 081221182199 (Indra)</Text>
       <Text>FryingPan - 08812341606 (Roni)</Text>
       <Text>GoDzz-- - 081356091014</Text>
       <Text>Joria - 081297922606</Text>

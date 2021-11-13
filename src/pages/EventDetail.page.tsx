@@ -17,15 +17,19 @@ const EventDetail = (): JSX.Element => {
   // console.log(id)
   const data = [
     {
-      title: 'KVM',
+      title: 'GVG',
       description: (
         <React.Fragment>
-          <Text bottom="10px" size="20px">KVM tanggal 21 Oktober 2021</Text>
-          <Text bold>yang mau ikut bisa request party ke</Text>
-          <Text size="14px">- Basith</Text>
-          <Text size="14px">- GoDzz--</Text>
-          <Text size="14px">- Nung28</Text>
-          <Text size="14px">- Nutella</Text>
+          {/* <Text bold>Aliansi dengan guild Reapers dan The Pirates</Text> */}
+          <Text>no description</Text>
+        </React.Fragment>
+      )
+    },
+    {
+      title: 'Endless Tower',
+      description: (
+        <React.Fragment>
+          <Text size="14px">- Lanjut yang belum lantai 80</Text>
         </React.Fragment>
       )
     },
@@ -38,10 +42,16 @@ const EventDetail = (): JSX.Element => {
       )
     },
     {
-      title: 'Endless Tower',
+      title: 'KVM',
       description: (
         <React.Fragment>
-          <Text size="14px">- Lanjut yang belum lantai 80</Text>
+          <Text bottom="10px" size="20px">KVM tanggal 21 Oktober 2021</Text>
+          <Text bold>yang mau ikut bisa request party ke</Text>
+          <Text size="14px">- Basith</Text>
+          <Text size="14px">- Kamizu</Text>
+          <Text size="14px">- GoDzz--</Text>
+          <Text size="14px">- Nung28</Text>
+          <Text size="14px">- Nutella</Text>
         </React.Fragment>
       )
     },
@@ -51,7 +61,7 @@ const EventDetail = (): JSX.Element => {
 
   return (
     <Screen>
-      <BackHeader title={renderData.title} onClick={() => history.goBack()} />
+      <BackHeader title={renderData.title} />
       <EventImage src="/assets/images/et-dummy-image.png" />
       <Content>
         {renderData.description}
