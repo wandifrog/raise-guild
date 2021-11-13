@@ -81,8 +81,8 @@ const KVMSquad = (): JSX.Element => {
           <Member name="Trinity7" job="AC" />
           <Member name="Eya Lulaby" job="AC" />
           <Member name="OG" job="AC" />
+          <Member name="VINATAN" job="HW" />
           <Member name="falina" job="HW" />
-          <Member name="Karina Leona" job="HW" />
           <Member name="Karina Leona" job="HW" />
           <Member name="Plat L" job="HP" />
           <Member name="Bonaa" job="HP" />
