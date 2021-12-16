@@ -11,70 +11,35 @@ const KVMSquad = (): JSX.Element => {
       <BackHeader title="KVM Squad" />
       <Screen>
         <Squad name="SQUAD #1">
-          <Member name="Basith" job="LK" />
           <Member name="Blimbing" job="WS" />
-          <Member name="Nutella" job="HW" />
-          <Member name="Rozes" job="Sniper" />
+          <Member name="Kinu" job="WS" />
           <Member name="nyamukk" job="HP" />
+          <Member name="C H O A" job="HP" />
+          <Member name="AggisErnie" job="HP" />
+          <Member name="Nutella" job="HW" />
+          <Member name="kunyitsayur" job="AC" />
           <Member name="GoDzz--" job="Sniper" />
-          <Member name="B O S" job="LK" />
-          <Member name="slegant" job="LK" />
-          <Member name="Adem" job="HW" />
-          <Member name="'DRAKE'" job="AC" />
-          <Member name="Kitty Pryde" job="Sniper" />
-          <Member name="Lucipp" job="Sniper" />
-          <Member name="ArArA" job="Sniper" />
-          <Member name="Mooza" job="Sniper" />
+          <Member name="Rozes" job="Sniper" />
+          <Member name="BOS" job="LK" />
         </Squad>
         <Squad name="SQUAD #2">
-          <Member name="ArArA" job="Sniper" />
-          <Member name="Lucipp" job="Sniper" />
-          <Member name="slegant" job="LK" />
-          <Member name="B O S" job="LK" />
-          <Member name="Adem" job="HW" />
+          <Member name="Pinkyjack" job="WS" />
+          <Member name="loyri" job="HP" />
+          <Member name="keyaru" job="HP" />
           <Member name="Nung28" job="HW" />
-          <Member name="VINATAN" job="HW" />
-          <Member name="Mavick" job="Sniper" />
-          <Member name="Kuanyi" job="Sniper" />
-          <Member name="'DRAKE'" job="AC" />
-          <Member name="mikerecca27" job="AC" />
+          <Member name="N a m a" job="Sniper" />
+          <Member name="Septiyand48" job="Sniper" />
+          <Member name="Basith" job="LK" />
         </Squad>
-        <Squad name="SQUAD #3">
-          <Member name="GoDzz--" job="Sniper" />
-          <Member name="Mooza" job="Sniper" />
-          <Member name="slegant" job="LK" />
-          <Member name="Kitty Pryde" job="Sniper" />
-          <Member name="Praetorian" job="LK" />
-          <Member name="Archni" job="Sniper" />
-          <Member name="soun" job="Sniper" />
-          <Member name="mikerecca27" job="AC" />
-        </Squad>
-        <Squad name="KVM 3x">
+        {/* <Squad name="KVM 3x">
           <Member name="BookieLee" job="Sniper" />
-          <Member name="sha-sha" job="Sniper" />
-          <Member name="Adem" job="HW" />
-          <Member name="Nung28" job="HW" />
-          <Member name="Soprano" job="WS" />
+          <Member name="Cascade" job="WS" />
           <Member name="Ragsire" job="WS" />
-          <Member name="Sir Tuyul" job="WS" />
-          <Member name="Luna" job="WS" />
-          <Member name="Kuanyi" job="Sniper" />
-          <Member name="Mavick" job="Sniper" />
-          <Member name="Archni" job="Sniper" />
-          <Member name="soun" job="Sniper" />
-          <Member name="bad cops" job="Sniper" />
-          <Member name="LEGOLAS" job="Sniper" />
-          <Member name="Ryud0" job="Sniper" />
-          <Member name="mayes" job="Sniper" />
-          <Member name="Siggy" job="Sniper" />
-          <Member name="Demelza" job="Sniper" />
-          <Member name="Riza" job="Sniper" />
-          <Member name="Daddyshyshy" job="Sniper" />
-          <Member name="mikerecca27" job="AC" />
+          <Member name="MerinXVII" job="WS" />
+
+          <Member name="Sean Han" job="AC" />
           <Member name="Dealova" job="AC" />
-          <Member name="'DRAKE'" job="AC" />
-          <Member name="Aulia" job="AC" />
-          <Member name="Havi" job="AC" />
+          <Member name="Rogue" job="AC" />
           <Member name="Wild15" job="AC" />
           <Member name="Lark" job="AC" />
           <Member name="Shiroilnuu" job="AC" />
@@ -83,20 +48,23 @@ const KVMSquad = (): JSX.Element => {
           <Member name="OG" job="AC" />
           <Member name="VINATAN" job="HW" />
           <Member name="falina" job="HW" />
-          <Member name="Karina Leona" job="HW" />
-          <Member name="Plat L" job="HP" />
-          <Member name="Bonaa" job="HP" />
-          <Member name="slegant" job="LK" />
+          <Member name="Archni" job="Sniper" />
+          <Member name="Mavick" job="Sniper" />
+          <Member name="soun" job="Sniper" />
+          <Member name="bad cops" job="Sniper" />
+          <Member name="Ryud0" job="Sniper" />
+          <Member name="mayes" job="Sniper" />
+          <Member name="Demelza" job="Sniper" />
+          <Member name="Riza" job="Sniper" />
+          <Member name="Daddyshyshy" job="Sniper" />
+          <Member name="Kamizu" job="HP" />
+          <Member name="Kai_Arulin" job="HP" />
+          <Member name="Houshou" job="HP" />
           <Member name="Praetorian" job="LK" />
-          <Member name="B O S" job="LK" />
           <Member name="Luigi" job="LK" />
           <Member name="Maragideyne" job="LK" />
-          <Member name="A to Z" job="LK" />
-          <Member name="Akita" job="LK" />
-          <Member name="xSinchan" job="LK" />
-          <Member name="Shakti.lar" job="LK" />
           <Member name="Mooza" job="Sniper" />
-        </Squad>
+        </Squad> */}
         <Text top="150px" size="10px" bold>Develop with <span style={{ color: 'red' }}>♥</span> by Wandi</Text>
       </Screen>
     </React.Fragment>
