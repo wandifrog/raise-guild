@@ -14,7 +14,6 @@ const KVMSquad = (): JSX.Element => {
           <Member name="Blimbing" job="WS" />
           <Member name="Kinu" job="WS" />
           <Member name="nyamukk" job="HP" />
-          <Member name="C H O A" job="HP" />
           <Member name="AggisErnie" job="HP" />
           <Member name="Nutella" job="HW" />
           <Member name="kunyitsayur" job="AC" />
@@ -23,8 +22,6 @@ const KVMSquad = (): JSX.Element => {
           <Member name="BOS" job="LK" />
         </Squad>
         <Squad name="SQUAD #2">
-          <Member name="Pinkyjack" job="WS" />
-          <Member name="loyri" job="HP" />
           <Member name="keyaru" job="HP" />
           <Member name="Nung28" job="HW" />
           <Member name="N a m a" job="Sniper" />
