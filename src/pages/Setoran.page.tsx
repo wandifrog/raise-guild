@@ -1,11 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import Text from '../components/Text'
-import HStack from '../components/HStack'
-import VStack from '../components/VStack'
-import LinkButton from '../components/ButtonLink'
-import RaiseFancyHeader from '../components/RaiseFancyHeader'
-import { useHistory } from "react-router"
 import BackHeader from '../components/BackHeader'
 
 const Setoran = (): JSX.Element => {

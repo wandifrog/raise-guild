@@ -19,11 +19,19 @@ const Home = (): JSX.Element => {
     console.log(history)
     window.history.replaceState(null, '', "/");
   }, [])
-  
+
   return (
     <Screen>
       <VStack align="center">
-        <RaiseFancyHeader />
+        {/* <RaiseFancyHeader /> */}
+        <HStack bottom={'120px'}>
+          <RaiseWallpaper src="/assets/images/raise-logo.png" />
+          <VStack left={'22px'}>
+            <Text bold size={'19px'}>Raise</Text>
+            <Text>lvl 5</Text>
+            <Text>74/75</Text>
+          </VStack>
+        </HStack>
         <Text>Open registration for new ninja</Text>
         <Text>Lvl 40++, guild order min 56/week,</Text>
         <Text>log in every day</Text>
@@ -51,6 +59,9 @@ const Home = (): JSX.Element => {
         <LinkButton top="18px" to="/setoran">
           Setoran
         </LinkButton>
+        <LinkButton top="18px" to="/reward-go">
+          Reward Guild Order (gajian)
+        </LinkButton>
         <LinkButton top="18px" to="/raise-grand-fleet">
           Raise Grand Fleet
         </LinkButton>
@@ -63,6 +74,10 @@ const Screen = styled.div`
   height: calc(100% - 135px);
   width: 100%;
   padding-top: 25px;
+`
+const RaiseWallpaper = styled.img`
+  width: 75px;
+  height: 75px;
 `
 
 export default Home

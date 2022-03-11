@@ -38,7 +38,9 @@ type VStackProps = ComponentMetrics & React.HTMLAttributes<HTMLDivElement> & {
 const VStack = ({
   children,
   top,
+  right,
   bottom,
+  left,
   align,
   height,
   justify,
@@ -54,6 +56,8 @@ const VStack = ({
     justifyContent: justify,
     marginBottom: bottom,
     marginTop: top,
+    marginLeft: left,
+    marginRight: right,
     padding,
     width,
     ...style,
