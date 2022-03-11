@@ -13,6 +13,7 @@ import Home from './pages/Home.page'
 import Member from './pages/Member.page'
 import KVMSquad from './pages/KVMSquad.page'
 import RaiseGrandFleet from './pages/RaiseGrandFleet.page'
+import Setoran from './pages/Setoran.page'
 
 
 const AppRoutes = (): JSX.Element => {
@@ -38,6 +39,9 @@ const AppRoutes = (): JSX.Element => {
               </Route>
               <Route path="/kvm-squad" exact>
                 <KVMSquad />
+              </Route>
+              <Route path="/setoran" exact>
+                <Setoran />
               </Route>
               <Route path="/raise-grand-fleet" exact>
                 <RaiseGrandFleet />

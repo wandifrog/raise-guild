@@ -25,8 +25,8 @@ const Home = (): JSX.Element => {
       <VStack align="center">
         <RaiseFancyHeader />
         <Text>Open registration for new ninja</Text>
-        <Text>Lvl 40++, guild order min 40/week,</Text>
-        <Text>log in every day, and kvm min 3x</Text>
+        <Text>Lvl 40++, guild order min 56/week,</Text>
+        <Text>log in every day</Text>
         <Text top="20px">if you are interested</Text>
         <HStack align="center">
           <Text
@@ -47,6 +47,9 @@ const Home = (): JSX.Element => {
         </LinkButton>
         <LinkButton top="18px" to="/kvm-squad">
           KVM Squad
+        </LinkButton>
+        <LinkButton top="18px" to="/setoran">
+          Setoran
         </LinkButton>
         <LinkButton top="18px" to="/raise-grand-fleet">
           Raise Grand Fleet
